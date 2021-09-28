@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+
+    </head>
+    <body>
+        
+        
+        <h1>Round Range Slider</h1>
+        
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+          <button onclick="play(1)" id="btn-p-off">
+            
+           <img id="btn-png" src="on.png" />
+            
+          </button>
+          <div class="flex-div">
+          <p><span id="demo">00:00</span></p>
+          <p>/</p>
+          <span id="max">00:00</span>
+          </div>
+        
+        
+          <audio src="t.mp3"  id="au" ></audio>
+        </div>
+          
+          
+        
+        
+        
+        
+
+
+
+
+
+
+
+        <script src="index.js">
+            
+if (aud.readyState > 0) {
+    displayDuration();
+   setSliderMax();
+  
+}
+
+        </script>
+    </body>
+</html>
